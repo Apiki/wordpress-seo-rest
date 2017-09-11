@@ -1,0 +1,19 @@
+{
+	"name": "wordpress-seo-rest",
+	"version": "0.1.0",
+	"description": "Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter)",
+	"main": "wordpress-seo-rest.php",
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"grunt-wp-i18n": "^1.0.0",
+		"load-grunt-config": "^0.19.2",
+		"load-grunt-tasks": "^3.5.2",
+		"time-grunt": "^1.4.0"
+	},
+	"keywords": [
+		"wordpress",
+		"plugin"
+	],
+	"author": "kassyn",
+	"license": "GPL-2.0"
+}

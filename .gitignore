@@ -1,0 +1,8 @@
+.htaccess
+.DS_Store
+*.log
+.sass-cache/
+node_modules/
+*.map
+*.orig
+.vscode/
