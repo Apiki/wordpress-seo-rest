@@ -1,7 +1,7 @@
 {
 	"name": "apiki/wordpress-seo-rest",
 	"description": "Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter)",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"type": "wordpress-plugin",
 	"license": "GPL",
 	"authors": [
