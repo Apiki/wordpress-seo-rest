@@ -1,12 +1,21 @@
 {
-    "name": "Apiki/SEO/REST",
-    "description": "Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter)",
-    "type": "wordpress-plugin",
+	"name": "Apiki/wordpress-seo-rest",
+	"description": "Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter)",
+	"type": "wordpress-plugin",
 	"license": "GPL",
-	"require": {},
-    "autoload": {
-        "psr-4": {
-            "Apiki\\SEO\\REST\\": "src/"
-        }
-    }
+	"authors": [
+		{
+			"name": "kassyn",
+			"email": "accacio.franklin@outlook.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Apiki\\SEO\\REST\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=5.3",
+		"composer/installers": "^1.0"
+	}
 }
