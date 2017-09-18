@@ -1,5 +1,5 @@
 {
-	"name": "Apiki/wordpress-seo-rest",
+	"name": "apiki/wordpress-seo-rest",
 	"description": "Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter)",
 	"type": "wordpress-plugin",
 	"license": "GPL",
