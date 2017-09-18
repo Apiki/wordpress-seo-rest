@@ -7,7 +7,7 @@
 	Text Domain: wordpress-seo-rest
 	Domain Path: /languages
 	License: GPLv2
-	Description: Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter)
+	Description: Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter).
 */
 
 if ( ! function_exists( 'add_action' ) ) {
