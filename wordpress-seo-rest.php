@@ -1,7 +1,7 @@
 <?php
 /*
 	Plugin Name: WordPress SEO REST
-	Version: 0.2.1
+	Version: 0.2.2
 	Author: @kassyn
 	Author URI: https://github.com/kassyn
 	Text Domain: wordpress-seo-rest
@@ -20,7 +20,7 @@ if ( ! file_exists( WP_PLUGIN_DIR . '/wordpress-seo/wp-seo.php' ) ) {
 
 use Apiki\SEO\REST\Core;
 
-include 'vendor/autoload.php';
+include __DIR__ . '/vendor/autoload.php';
 
 $core = new Core( __FILE__ );
 
