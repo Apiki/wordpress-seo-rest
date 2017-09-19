@@ -7,6 +7,15 @@ namespace Composer\Autoload;
 class ComposerStaticInit58a9f8e0c107e5dff5c629c51d1a21b1
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'Plasticbrain\\FlashMessages\\' => 27,
+            'PhpAmqpLib\\' => 11,
+        ),
+        'C' => 
+        array (
+            'Composer\\Installers\\' => 20,
+        ),
         'A' => 
         array (
             'Apiki\\SEO\\REST\\' => 15,
@@ -14,6 +23,18 @@ class ComposerStaticInit58a9f8e0c107e5dff5c629c51d1a21b1
     );
 
     public static $prefixDirsPsr4 = array (
+        'Plasticbrain\\FlashMessages\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/plasticbrain/php-flash-messages/src',
+        ),
+        'PhpAmqpLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
+        ),
+        'Composer\\Installers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
+        ),
         'Apiki\\SEO\\REST\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',

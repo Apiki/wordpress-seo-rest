@@ -10,7 +10,7 @@
 	Description: Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter).
 */
 
-if ( ! function_exists( 'add_action' ) ) {
+if (!function_exists( 'add_action' ) ) {
 	exit( 0 );
 }
 
