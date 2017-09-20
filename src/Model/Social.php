@@ -30,7 +30,9 @@ class Social extends WPSEO_OpenGraph
 
 	public function get_title()
 	{
-		if ( $title = WPSEO_Meta::get_value( 'title', $this->post->ID ) ) {
+		$title = WPSEO_Meta::get_value( 'title', $this->post->ID );
+
+		if ( $title ) {
 			return $title;
 		}
 
@@ -66,7 +68,9 @@ class Social extends WPSEO_OpenGraph
 
 	public function get_description()
 	{
-		if ( $desc = WPSEO_Meta::get_value( 'metadesc', $this->post->ID ) ) {
+		$desc = WPSEO_Meta::get_value( 'metadesc', $this->post->ID );
+
+		if ( $desc ) {
 			return $this->get_replace_vars( $desc, true );
 		}
 

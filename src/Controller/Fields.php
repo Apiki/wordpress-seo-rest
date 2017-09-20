@@ -48,7 +48,7 @@ class Fields
 		);
 	}
 
-	public function get_rest_value_post_type( $object, $name, $request )
+	public function get_rest_value_post_type( $object )
 	{
 		$instances = $this->get_instances( $object );
 

@@ -47,7 +47,9 @@ class Twitter extends Social
 
 	public function get_image()
 	{
-		if ( $image = $this->get_meta_image_by_keys( array( 'twitter-image', 'opengraph-image' ) ) ) {
+		$image = $this->get_meta_image_by_keys( array( 'twitter-image', 'opengraph-image' ) );
+
+		if ( $image ) {
 			return $image;
 		}
 
