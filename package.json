@@ -3,9 +3,16 @@
 	"version": "0.1.0",
 	"description": "Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter)",
 	"main": "wordpress-seo-rest.php",
+	"scripts": {
+		"prepush": "yarn phpcs",
+		"precommit": "yarn phpcs:diff",
+		"phpcs:diff": "git diff --name-only --cached --diff-filter=ACMRTUXB | xargs phpcs --colors -p",
+		"phpcs": "phpcs --colors -p ./"
+	},
 	"devDependencies": {
 		"grunt": "^1.0.1",
 		"grunt-wp-i18n": "^1.0.0",
+		"husky": "^0.14.3",
 		"load-grunt-config": "^0.19.2",
 		"load-grunt-tasks": "^3.5.2",
 		"time-grunt": "^1.4.0"

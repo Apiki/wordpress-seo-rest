@@ -6,3 +6,5 @@ node_modules/
 *.map
 *.orig
 .vscode/
+yarn.lock
+composer.lock
