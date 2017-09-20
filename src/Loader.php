@@ -73,7 +73,7 @@ abstract class Loader
 		$namespace = $this->get_namespace();
 
 		foreach ( $controllers as $name ) {
-			$this->_handle_instance( sprintf( "{$namespace}\Controller\%s", $name ), $activate );
+			$this->handle_instance( sprintf( "{$namespace}\Controller\%s", $name ), $activate );
 		}
 	}
 
@@ -179,7 +179,7 @@ abstract class Loader
 	 * @param string $class class name.
 	 * @param bool $activate used for add capabilities in creating instance.
 	 */
-	private function _handle_instance( $class, $activate = false )
+	private function handle_instance( $class, $activate = false )
 	{
 		$instance = new $class( $activate );
 
