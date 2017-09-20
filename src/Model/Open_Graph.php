@@ -104,7 +104,6 @@ class Open_Graph extends Social
 			'description'    => $this->get_description(),
 			'type'           => $this->get_type(),
 			'locale'         => $this->get_locale(),
-			'url'            => $this->get_url(),
 			'site_name'      => $this->get_site_name(),
 			'image'          => $this->get_image_object(),
 			'modified_time'  => $this->get_modified_time(),
