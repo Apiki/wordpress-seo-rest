@@ -22,13 +22,11 @@ class Fields
 
 	public function get_post_types()
 	{
-		$types = get_post_types();
+		$types = get_post_types( array( 'public' => true ) );
 
 		unset( $types['attachment'] );
 		unset( $types['revision'] );
 		unset( $types['nav_menu_item'] );
-		unset( $types['custom_css'] );
-		unset( $types['customize_changeset'] );
 
 		return $types;
 	}

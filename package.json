@@ -6,7 +6,7 @@
 	"scripts": {
 		"prepush": "yarn phpcs",
 		"precommit": "yarn phpcs:diff",
-		"phpcs:diff": "git diff --name-only --cached --diff-filter=ACMRTUXB | xargs phpcs --colors -p",
+		"phpcs:diff": "git diff --name-only --cached --diff-filter=ACMRTUXB -- . ':(exclude)vendor/*' | xargs phpcs --colors -p",
 		"phpcs": "phpcs --colors -p ./"
 	},
 	"devDependencies": {
