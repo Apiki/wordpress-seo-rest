@@ -4,13 +4,9 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit58a9f8e0c107e5dff5c629c51d1a21b1
+class ComposerStaticInitf7c03f1023527f35a1657906b0ed8791
 {
     public static $prefixLengthsPsr4 = array (
-        'C' => 
-        array (
-            'Composer\\Installers\\' => 20,
-        ),
         'A' => 
         array (
             'Apiki\\SEO\\REST\\' => 15,
@@ -18,10 +14,6 @@ class ComposerStaticInit58a9f8e0c107e5dff5c629c51d1a21b1
     );
 
     public static $prefixDirsPsr4 = array (
-        'Composer\\Installers\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
-        ),
         'Apiki\\SEO\\REST\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
@@ -31,8 +23,8 @@ class ComposerStaticInit58a9f8e0c107e5dff5c629c51d1a21b1
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit58a9f8e0c107e5dff5c629c51d1a21b1::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit58a9f8e0c107e5dff5c629c51d1a21b1::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf7c03f1023527f35a1657906b0ed8791::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf7c03f1023527f35a1657906b0ed8791::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
