@@ -22,7 +22,9 @@ class Fields
 
 	public function get_post_types()
 	{
-		$types = get_post_types( array( 'public' => true ) );
+		$types = get_post_types( array(
+			'public' => true,
+		) );
 
 		unset( $types['attachment'] );
 		unset( $types['revision'] );
