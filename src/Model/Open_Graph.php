@@ -71,7 +71,9 @@ class Open_Graph extends Social
 		$image = $this->get_meta_image_by_keys( array( 'opengraph-image' ) );
 
 		if ( $image ) {
-			return array( 'src' => $image );
+			return array(
+				'src' => $image,
+			);
 		}
 
 		$thumb = $this->get_thumbnail_src( apply_filters( 'wpseo_opengraph_image_size', 'original' ) );
