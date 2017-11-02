@@ -20,7 +20,9 @@ if ( ! file_exists( WP_PLUGIN_DIR . '/wordpress-seo/wp-seo.php' ) ) {
 
 use Apiki\SEO\REST\Core;
 
-include __DIR__ . '/vendor/autoload.php';
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+	require( __DIR__ . '/vendor/autoload.php' );
+}
 
 $core = new Core( __FILE__ );
 
