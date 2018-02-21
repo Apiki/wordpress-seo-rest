@@ -9,6 +9,7 @@ if ( ! function_exists( 'add_action' ) ) {
 use Apiki\SEO\REST\Core;
 use Apiki\SEO\REST\Model\Open_Graph;
 use Apiki\SEO\REST\Model\Twitter;
+use Apiki\SEO\REST\Model\Meta;
 use WPSEO_Options;
 
 class Fields
@@ -52,10 +53,11 @@ class Fields
 	{
 		$instances = $this->get_instances( $object );
 
-		return array(
+		return apply_filters( 'wpseo_rest_value_post_type', array(
 			'open_graph' => $instances['open_graph']->get_array(),
 			'twitter'    => $instances['twitter']->get_array(),
-		);
+			'meta'       => $instances['meta']->get_array(),
+		) );
 	}
 
 	public function get_instances( $object )
@@ -65,6 +67,7 @@ class Fields
 		return array(
 			'open_graph' => new Open_Graph( $post, $this->options ),
 			'twitter'    => new Twitter( $post, $this->options ),
+			'meta'       => new Meta( $post, $this->options ),
 		);
 	}
 }
