@@ -11,7 +11,8 @@ class Core extends Loader
 	public function initialize()
 	{
 		$controllers = array(
-			'Fields',
+			'Posts',
+			'Taxonomies',
 		);
 
 		$this->load_controllers( $controllers );

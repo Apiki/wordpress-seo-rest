@@ -12,7 +12,7 @@ use Apiki\SEO\REST\Model\Twitter;
 use Apiki\SEO\REST\Model\Meta;
 use WPSEO_Options;
 
-class Fields
+class Posts
 {
 	public $options = array();
 
