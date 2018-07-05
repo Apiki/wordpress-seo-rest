@@ -1,4 +1,4 @@
-# WordPress REST SEO
+# WordPress SEO REST
 
 Disponibiliza na REST API os campos configurados através do plugin wordpress-seo (Yoast).
 
