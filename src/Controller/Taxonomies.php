@@ -51,6 +51,7 @@ class Taxonomies
 		return array(
 			'open_graph' => $model->get_open_graph(),
 			'twitter'    => $model->get_twitter(),
+			'meta'       => $model->get_metas(),
 		);
 	}
 }

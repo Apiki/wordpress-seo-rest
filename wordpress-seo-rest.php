@@ -1,7 +1,7 @@
 <?php
 /*
 	Plugin Name: WordPress SEO REST
-	Version: 1.1.6
+	Version: 1.2.2
 	Author: @kassyn
 	Author URI: https://github.com/kassyn
 	Text Domain: wordpress-seo-rest
@@ -18,11 +18,11 @@ if ( ! file_exists( WP_PLUGIN_DIR . '/wordpress-seo/wp-seo.php' ) ) {
 	return;
 }
 
-use Apiki\SEO\REST\Core;
-
 if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
-	require( __DIR__ . '/vendor/autoload.php' );
+	require __DIR__ . '/vendor/autoload.php';
 }
+
+use Apiki\SEO\REST\Core;
 
 $core = new Core( __FILE__ );
 

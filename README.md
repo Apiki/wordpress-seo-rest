@@ -49,6 +49,10 @@ Funciona tanto para os post_types, quanto para as taxonomias.
 	"description": "Categoria 1 - Twitter",
 	"type": "summary_large_image",
 	"image": "http://localhost/wordpress-dev/wp-content/uploads/2018/07/sample.jpg"
+  },
+  "meta": {
+	"title": "Categoria 1 title SEO",
+	"description": "Lorem ipsum categoria 1"
   }
 },
 ```

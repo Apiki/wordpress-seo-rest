@@ -34,7 +34,7 @@ class Term
 	public function __construct( $term, $options )
 	{
 		$this->options = $options;
-		$this->metas   = $this->get_metas( $term['taxonomy'], $term['id'] );
+		$this->metas   = $this->get_yoast_metas( $term['taxonomy'], $term['id'] );
 		$this->term    = $term;
 	}
 
@@ -58,7 +58,15 @@ class Term
 		);
 	}
 
-	private function get_metas( $taxonomy, $term_id )
+	public function get_metas()
+	{
+		return array(
+			'title'       => $this->get_title( 'base' ),
+			'description' => $this->get_description( 'base' ),
+		);
+	}
+
+	private function get_yoast_metas( $taxonomy, $term_id )
 	{
 		if ( isset( $this->options[ $taxonomy ][ $term_id ] ) ) {
 			return array_merge( WPSEO_Taxonomy_Meta::$defaults_per_term, $this->options[ $taxonomy ][ $term_id ] );
@@ -69,7 +77,7 @@ class Term
 
 	private function get_title( $prefix = 'opengraph' )
 	{
-		$meta  = "wpseo_{$prefix}-title";
+		$meta  = 'base' === $prefix ? 'wpseo_title' : "wpseo_{$prefix}-title";
 		$title = $this->metas[ $meta ];
 
 		if ( empty( $meta ) ) {
@@ -81,7 +89,7 @@ class Term
 
 	private function get_description( $prefix = 'opengraph' )
 	{
-		$meta        = "wpseo_{$prefix}-description";
+		$meta        = 'base' === $prefix ? 'wpseo_desc' : "wpseo_{$prefix}-description";
 		$description = $this->metas[ $meta ];
 
 		if ( empty( $meta ) ) {
