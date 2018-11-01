@@ -6,7 +6,7 @@
 	Author URI: https://github.com/kassyn
 	Text Domain: wordpress-seo-rest
 	Domain Path: /languages
-	License: GPLv2
+	License: GPL-2.0
 	Description: Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter).
 */
 
