@@ -8,6 +8,11 @@ if ( ! function_exists( 'add_action' ) ) {
 
 class Meta extends Social
 {
+	public function get_title()
+	{
+		return trim( apply_filters( 'wpseo_meta_title', parent::get_title() ) );
+	}
+
 	public function get_description()
 	{
 		return trim( apply_filters( 'wpseo_meta_desc', parent::get_description() ) );
@@ -16,6 +21,7 @@ class Meta extends Social
 	public function get_array()
 	{
 		return array(
+			'title'       => $this->get_title(),
 			'description' => $this->get_description(),
 		);
 	}

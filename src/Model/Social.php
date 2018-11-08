@@ -33,7 +33,7 @@ class Social extends WPSEO_OpenGraph
 		$title = WPSEO_Meta::get_value( 'title', $this->post->ID );
 
 		if ( $title ) {
-			return $title;
+			return $this->get_replace_vars( $title, true );
 		}
 
 		return wpseo_replace_vars( $this->options[ 'title-' . $this->post->post_type ], $this->post );

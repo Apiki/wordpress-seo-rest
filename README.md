@@ -30,6 +30,7 @@ Funciona tanto para os post_types, quanto para as taxonomias.
 	"image": false
   },
   "meta": {
+	"title": "Olá, mundo! - WordPress DEV",
 	"description": "Bem-vindo ao WordPress. Esse é o seu primeiro post. Edite-o ou exclua-o, e então comece a escrever!"
   }
 },

@@ -1,6 +1,6 @@
 {
 	"name": "wordpress-seo-rest",
-	"version": "1.2.3",
+	"version": "1.2.4",
 	"description": "Show in JSON REST params configured in yoast (meta-title, meta-description, facebook, twitter)",
 	"main": "wordpress-seo-rest.php",
 	"scripts": {

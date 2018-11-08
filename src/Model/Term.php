@@ -80,7 +80,7 @@ class Term
 		$meta  = 'base' === $prefix ? 'wpseo_title' : "wpseo_{$prefix}-title";
 		$title = $this->metas[ $meta ];
 
-		if ( empty( $meta ) ) {
+		if ( empty( $title ) ) {
 			$title = $this->term['name'];
 		}
 
@@ -92,7 +92,7 @@ class Term
 		$meta        = 'base' === $prefix ? 'wpseo_desc' : "wpseo_{$prefix}-description";
 		$description = $this->metas[ $meta ];
 
-		if ( empty( $meta ) ) {
+		if ( empty( $description ) ) {
 			$description = $this->term['description'];
 		}
 
