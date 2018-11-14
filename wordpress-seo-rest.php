@@ -1,7 +1,7 @@
 <?php
 /*
 	Plugin Name: WordPress SEO REST
-	Version: 1.2.4
+	Version: 1.2.5
 	Author: @kassyn
 	Author URI: https://github.com/kassyn
 	Text Domain: wordpress-seo-rest

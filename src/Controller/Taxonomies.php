@@ -46,7 +46,7 @@ class Taxonomies
 
 	public function get_rest_value( $object )
 	{
-		$model = new Term( $object, $this->options );
+		$model = new Term( (array) get_term( $object['id'] ), $this->options );
 
 		return array(
 			'open_graph' => $model->get_open_graph(),

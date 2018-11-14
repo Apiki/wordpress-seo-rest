@@ -34,7 +34,7 @@ class Term
 	public function __construct( $term, $options )
 	{
 		$this->options = $options;
-		$this->metas   = $this->get_yoast_metas( $term['taxonomy'], $term['id'] );
+		$this->metas   = $this->get_yoast_metas( $term['taxonomy'], $term['term_id'] );
 		$this->term    = $term;
 	}
 
